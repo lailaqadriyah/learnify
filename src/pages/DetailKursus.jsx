@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Detail = [
   {
@@ -8,7 +9,8 @@ const Detail = [
     img: "/src/img/kursus1.jpg",
     description:
       "Kemajuan teknologi saat ini bukan hanya menghasilkan website yang keren tetapi juga tools untuk membuat website yang super keren dan mudah digunakan. Dengan tools tersebut, kamu yang bukan jagoan koding (programmer web) sekalipun mudah untuk membuat website sendiri dan yang memiliki nilai jual. Kelas ini akan mengajarkan kamu secara interaktif dan menyenangkan bagaimana proses pembuatan website tanpa koding dengan aplikasi Mobirise. Kami juga akan membagikan tips dan trik menarik dan tidak ketinggalan juga aset-aset digital yang siap kamu gunakan untuk kebutuhan praktik selama mengikuti kelas ini. Gimana? Udah siap untuk buat sesuatu yang menarik? Yuk buruan gabung ke kelasnya!",
-  },
+    link: "/bayar-kursus/1",
+    },
   {
     id:2,
     title: "Kursus Data Science",
@@ -53,9 +55,11 @@ function DetailKursus() {
               className="h-64"
             />
             <p className="text-gray-600 mt-6">Harga: Rp300.000</p>
+            <Link to={detail.link}>
             <button className="bg-blue-600 text-white rounded-lg w-16 h-8 mt-4">
               Beli
             </button>
+            </Link>
           </div>
         </div>
 
