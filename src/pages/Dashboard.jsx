@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Kursus = [
   {
     id: 1,
@@ -18,7 +19,7 @@ const Kursus = [
       "Pelajari analisis data, machine learning, dan visualisasi data.",
     imageUrl: "/src/img/kursus2.png",
     harga: "Rp500.000",
-    link: "",
+    link: "detail-kursus/2",
   },
   {
     id: 3,
@@ -27,7 +28,7 @@ const Kursus = [
       "Pelajari dasar-dasar desain grafis dan penggunaan software desain.",
     imageUrl: "/src/img/kursusdesain.png",
     harga: "Rp400.000",
-    link: "",
+    link: "detail-kursus/3",
   },
   {
     id: 4,
@@ -36,7 +37,7 @@ const Kursus = [
       "Pelajari strategi pemasaran online dan penggunaan media sosial.",
     imageUrl: "/src/img/kursus3.jpg",
     harga: "Rp350.000",
-    link: "",
+    link: "detail-kursus/4",
   },
 ];
 function Dashboard() {
@@ -54,7 +55,7 @@ function Dashboard() {
               className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
             >
               <img src={kursus.imageUrl} alt={kursus.title} className="w-full"/>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2">
+              <h2 className="text-xl font-semibold text-gray-800 mb-2 mt-4">
                 {kursus.title}
               </h2>
               <p className="text-gray-600 mb-4">{kursus.description}</p>
