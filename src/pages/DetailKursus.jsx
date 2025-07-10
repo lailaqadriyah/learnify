@@ -17,21 +17,24 @@ const Detail = [
     img: "/src/img/kursus2.png",
     description:
       "Data Science adalah bidang yang sangat penting dalam dunia teknologi saat ini. Dalam kursus ini, Anda akan mempelajari konsep dasar Data Science, termasuk pengumpulan data, analisis data, dan penerapan machine learning. Kursus ini dirancang untuk pemula yang ingin memahami bagaimana data dapat digunakan untuk mengambil keputusan yang lebih baik.",
-  },
+    link: "/bayar-kursus/2",
+    },
   {
     id:3,
     title: "Kursus Desain Grafis",
     img: "/src/img/kursusdesain.png",
     description:
       "Desain grafis adalah seni menciptakan visual yang menarik dan efektif. Dalam kursus ini, Anda akan belajar tentang prinsip-prinsip desain, penggunaan perangkat lunak desain seperti Adobe Photoshop dan Illustrator, serta cara membuat karya desain yang profesional. Kursus ini cocok untuk siapa saja yang ingin mengembangkan keterampilan desain mereka.",
-  },
+    link: "/bayar-kursus/3",
+    },
   {
     id:4,
     title: "Kursus Pemasaran Digital",
     img: "/src/img/kursus3.jpg",
     description:
       "Pemasaran digital adalah kunci untuk sukses dalam bisnis online. Dalam kursus ini, Anda akan mempelajari strategi pemasaran digital, termasuk SEO, media sosial, dan iklan online. Kursus ini dirancang untuk membantu Anda memahami cara memasarkan produk atau layanan Anda secara efektif di dunia digital.",
-  }
+    link: "/bayar-kursus/4",
+    }
 ];
 function DetailKursus() {
     const { id } = useParams();
