@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="bg-white shadow-md py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Logo & Hamburger */}
+        Logo & Hamburger
         <div className="flex items-center space-x-2">
           <button
             className="focus:outline-none"
@@ -63,11 +63,13 @@ function Header() {
           <Link to="/about" className="text-gray-700 hover:text-black font-medium">
             About
           </Link>
+          <Link to="/profile" className="text-gray-700 hover:text-black font-medium">
           <FaUserCircle className="w-6 h-6 text-gray-600" />
+          </Link>
         </nav>
       </div>
 
-      {/* Menu mobile */}
+      {/* Menu mobile
       {isOpen && (
         <div className="bg-white px-4 pt-2 pb-4 shadow space-y-4">
           <Link to="/" className="block text-gray-700 hover:text-black font-medium">
@@ -78,7 +80,7 @@ function Header() {
           </Link>
           
         </div>
-      )}
+      )} */}
     </header>
   );
 }

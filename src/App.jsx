@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard';
 import Header from './components/Header';
 import DetailKursus from './pages/DetailKursus';
 import Pembayaran from './pages/Pembayaran';
+import Profile from './pages/Profile';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/detail-kursus/:id" element={<DetailKursus />} />
           <Route path="/bayar-kursus/:id" element={<Pembayaran />} />
+          <Route path="/profile" element={<Profile />} />
 
       </Routes>
     </main>
