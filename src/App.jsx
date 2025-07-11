@@ -5,6 +5,7 @@ import Header from './components/Header';
 import DetailKursus from './pages/DetailKursus';
 import Pembayaran from './pages/Pembayaran';
 import Profile from './pages/Profile';
+import Modul from './pages/Modul';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/detail-kursus/:id" element={<DetailKursus />} />
           <Route path="/bayar-kursus/:id" element={<Pembayaran />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/modul/:id" element={<Modul />} />
 
       </Routes>
     </main>
