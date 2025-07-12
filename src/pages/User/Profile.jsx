@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Profile() {
   const user = {
@@ -7,8 +8,8 @@ function Profile() {
     bio: "Mahasiswa SI yang suka belajar web development.",
     photo: "/src/img/profile.jpg",
     courses: [
-      { id: 1, title: "Kursus Pemrograman Web", progress: 80 },
-      { id: 2, title: "Kursus Data Science", progress: 45 },
+      { id: 1, title: "Kursus Pemrograman Web", progress: 80, link:"/modul/1" },
+      { id: 2, title: "Kursus Data Science", progress: 45, link:"/modul/2"},
     ],
   };
 
@@ -49,9 +50,11 @@ function Profile() {
                     Progress: {course.progress}%
                   </p>
                 </div>
+                <Link to={course.link} className="ml-4">
                 <button className="text-blue-600 hover:underline">
                   Lanjutkan
                 </button>
+                </Link>
               </div>
             ))}
           </div>

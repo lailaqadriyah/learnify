@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Dashboard from './pages/Dashboard';
+
+import Dashboard from './pages/User/Dashboard';
 import Header from './components/Header';
-import DetailKursus from './pages/DetailKursus';
-import Pembayaran from './pages/Pembayaran';
-import Profile from './pages/Profile';
-import Modul from './pages/Modul';
+import DetailKursus from './pages/User/DetailKursus';
+import Pembayaran from './pages/User/Pembayaran';
+import Profile from './pages/User/Profile';
+import Modul from './pages/User/Modul';
+import TambahKursus from './pages/Pengajar/TambahKursus';
 
 function App() {
 
@@ -21,6 +23,7 @@ function App() {
           <Route path="/bayar-kursus/:id" element={<Pembayaran />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/modul/:id" element={<Modul />} />
+          <Route path="/tambah-kursus" element={<TambahKursus />} />
 
       </Routes>
     </main>
